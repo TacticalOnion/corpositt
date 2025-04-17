@@ -36,7 +36,7 @@
                 </video>
             </div>
             <div class="banner-content">
-                <img src="./assets/corpositt-sf-logo -blanco.svg" type="image/svg+xml" class="icon">
+                <img src="./assets/corpositt-sf-logo -blanco.svg" type="image/svg+xml" class="icon" alt="Corpositt logo">
                 <h1>CORPOSITT</h1>
                 <cite>"Protegemos tu camino, cuidamos tu valor"</cite>
             </div>
@@ -46,7 +46,7 @@
     <!--MENU-->
     <nav id="nav-bar">
         <ol>
-            <img src="./assets/corpositt-sf-logo -blanco.svg" type="image/svg+xml" class="icon">
+            <img src="./assets/corpositt-sf-logo -blanco.svg" type="image/svg+xml" class="icon" alt="Corpositt logo">
             <!--Home-->
             <li>
                 <a href="#home">Inicio</a>
@@ -77,13 +77,18 @@
     <main>
         <!--OUR HISTORY-->
         <section id="our-history">
-            <h2>Historia</h2>
-            <p>
-                CORPOSIT nace con un objetivo claro: proteger lo que mueve a México. 
-                Desde nuestros inicios, nos hemos especializado en la custodia de envíos 
-                por carretera, garantizando la seguridad de mercancías valiosas durante 
-                su traslado por todo el país.
-            </p>
+            <div class="card">
+                <div class="card-content">
+                    <h2>Historia</h2>
+                    <p>
+                        CORPOSIT nace con un objetivo claro: proteger lo que mueve a México. 
+                        Desde nuestros inicios, nos hemos especializado en la custodia de envíos 
+                        por carretera, garantizando la seguridad de mercancías valiosas durante 
+                        su traslado por todo el país.
+                    </p>
+                </div>
+                <img src="./assets/img/corpositt-preview-card.png" class="card-image" alt="Corpositt soluciones">
+            </div>
         </section>
 
         <!--ABOUT US-->
@@ -95,71 +100,134 @@
                 para brindar acompañamiento profesional, disuasión efectiva y 
                 prevención del delito en cada ruta.
             </p>
+
+            <!--VALUES-->
+            <h3>Valores</h3>
+            <ul class="values">
+                <!--VALUE 1-->
+                <li>
+                    <div class="value" onclick="toggleInfo(this)">
+                        <img src="./assets/img/security.webp">
+                        <div class="info">
+                            <h4>Seguridad</h4>
+                            <p>
+                                Nuestra prioridad es la protección de los activos de nuestros 
+                                clientes durante cada trayecto
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <!--VALUE 2-->
+                <li>
+                    <div class="value" onclick="toggleInfo(this)">
+                        <img src="./assets/img/precision.webp">
+                        <div class="info">
+                            <h4>Precisión</h4>
+                            <p>
+                                Nos guiamos por procesos claros, planificación detallada y ejecución 
+                                eficiente para cada ruta.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <!--VALUE 3-->
+                <li>
+                    <div class="value" onclick="toggleInfo(this)">
+                        <img src="./assets/img/professional.webp">
+                        <div class="info">
+                            <h4>Profesionalismo</h4>
+                            <p>
+                                Contamos con personal capacitado, responsable y comprometido con los más 
+                                altos estándares del servicio de custodia
+                            </p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
         </section>
 
         <!--SERVICES-->
         <section id="services">
             <h2>Servicios</h2>
 
-            <!--SERVICE 1-->
+            <div class="section-content">
+                 <!--SERVICE 1-->
             <article>
-                <h3>Viaje largo</h3>
-                <span>10 a 30 km</span>
-                <p>
-                    Pensado para recorridos de media distancia, este servicio incluye 
-                    escoltas altamente capacitados y una planeación detallada de la ruta. 
-                    Es la solución perfecta para proteger activos en traslados 
-                    intermunicipales o periféricos.
-                </p>
+                <div class="card">
+                    <img src="./assets/img/free-way.webp" class="card-image" alt="carretera">
+                    <div class="card-content">
+                        <h3>Viaje largo</h3>
+                        <span>10 a 30 km</span>
+                        <p>
+                            Pensado para recorridos de media distancia, este servicio incluye 
+                            escoltas altamente capacitados y una planeación detallada de la ruta. 
+                            Es la solución perfecta para proteger activos en traslados 
+                            intermunicipales o periféricos.
+                        </p>
+                    </div>
+                </div>
             </article>
 
             <!--SERVICE 2-->
             <article>
-                <h3>Viaje corto</h3>
-                <span>1 a 10km</span>
-                <p>
-                    Servicio ideal para traslados locales o dentro de zonas urbanas. 
-                    Ofrecemos custodia rápida y eficiente para movimientos estratégicos 
-                    de mercancía en distancias reducidas, garantizando seguridad sin 
-                    importar lo breve del trayecto.
-                </p>
+                <div class="card">
+                    <img src="./assets/img/city.webp" class="card-image">
+                    <div class="card-content">
+                        <h3>Viaje corto</h3>
+                        <span>1 a 10km</span>
+                        <p>
+                            Servicio ideal para traslados locales o dentro de zonas urbanas. 
+                            Ofrecemos custodia rápida y eficiente para movimientos estratégicos 
+                            de mercancía en distancias reducidas, garantizando seguridad sin 
+                            importar lo breve del trayecto.
+                        </p>
+                    </div>
+                </div>
             </article>
+            </div>
         </section>
 
         <!--REVIEWS-->
         <section id="reviews">
             <h2>Reseñas</h2>
 
-            <!--REVIEW 1-->
-            <article>
-                <h3>Transportes del Norte S.A. de C.V.</h3>
-                <cite>
-                    "Desde que trabajamos con CORPOSIT, hemos 
-                    tenido cero incidentes en nuestras rutas. 
-                    Su equipo de custodia es profesional y siempre 
-                    puntual. Una empresa confiable."
-                </cite>
-            </article>
+            <div class="section-content">
+                <!--REVIEW 1-->
+                <article>
+                    
+                    <h3>Spectravel</h3>
+                    <div class="divider"></div>
+                    <cite>
+                        "Desde que trabajamos con CORPOSIT, hemos 
+                        tenido cero incidentes en nuestras rutas. 
+                        Su equipo de custodia es profesional y siempre 
+                        puntual. Una empresa confiable."
+                    </cite>
+                </article>
 
-            <!--REVIEW 2-->
-            <article>
-                <h3>Logística MX Express</h3>
-                <cite>
-                    "Lo que más valoramos de CORPOSIT es su compromiso 
-                    con la seguridad y su atención personalizada. Nos 
-                    dan tranquilidad en cada envío."
-                </cite>
-            </article>
+                <!--REVIEW 2-->
+                <article>
+                    <h3>MX Express</h3>
+                    <div class="divider"></div>
+                    <cite>
+                        "Lo que más valoramos de CORPOSIT es su compromiso 
+                        con la seguridad y su atención personalizada. Nos 
+                        dan tranquilidad en cada envío."
+                    </cite>
+                </article>
 
-            <!--REVIEW 3-->
-            <article>
-                <h3>Grupo Indumex</h3>
-                <cite>
-                    "Excelente servicio. La coordinación de las escoltas y 
-                    el seguimiento durante el traslado hacen la diferencia. 
-                    CORPOSIT es sinónimo de protección."
-                </cite>
-            </article>
+                <!--REVIEW 3-->
+                <article>
+                    <h3>Grupo Indumex</h3>
+                    <div class="divider"></div>
+                    <cite>
+                        "Excelente servicio. La coordinación de las escoltas y 
+                        el seguimiento durante el traslado hacen la diferencia. 
+                        CORPOSIT es sinónimo de protección."
+                    </cite>
+                </article>
+            </div>
         </section>
 
         <!--CONTACT-->
@@ -183,6 +251,14 @@
         </section>
     </main>
 
-    <footer>Corpositt. Todos los derechos reservados</footer>
+    <footer>
+        <p>Corpositt. Todos los derechos reservados</p>
+    </footer>
+
+    <script>
+        function toggleInfo(element) {
+            element.classList.toggle("active");
+        }
+    </script>
 </body>
 </html>
