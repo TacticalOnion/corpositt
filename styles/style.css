@@ -1,0 +1,68 @@
+/*================[ RESET ]*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+/*================[ BODY ]*/
+body {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+/*================[ BANNER ]*/
+.banner{
+    width: 100vw;
+    height: 100vh;
+}
+
+.banner-background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.banner-background::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.banner-background video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.banner-background svg{
+    
+    width: 10vw;
+    height: auto;
+}
+
+.banner-content{
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+.banner-content h1{
+    font-size: 4rem;
+}
+
+
+
